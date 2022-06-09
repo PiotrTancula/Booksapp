@@ -67,14 +67,17 @@ function initActions() {
       console.log('input jest checked');
       filters.push(e.target.value);
       console.log(filters);
+      // filterBooks();
 
     } else {
       filters.splice(filters.indexOf(!e.target.checked),1);
       console.log(filters);
-
+      // filterBooks();
     }
     filterBooks();
   });
+
+
 }
 
 function filterBooks() {
