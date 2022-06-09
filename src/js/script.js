@@ -82,11 +82,11 @@ function initActions() {
 
 function filterBooks() {
 
-  let shouldBeHidden = false;
+
 
   for (const book of dataSource.books) {
     // console.log(book);
-
+    let shouldBeHidden = false;
     for (const filter of filters) {
       if (!book.details[filter]) {
         shouldBeHidden = true;
