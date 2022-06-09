@@ -85,7 +85,7 @@ function filterBooks() {
   let shouldBeHidden = false;
 
   for (const book of dataSource.books) {
-    console.log(book);
+    // console.log(book);
 
     for (const filter of filters) {
       if (!book.details[filter]) {
